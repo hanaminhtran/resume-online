@@ -29,7 +29,7 @@ function App() {
           }}
         />
 
-        <div className={`container ${inactive ? "inactive" : ""}`}>
+        <div className={`main-container ${inactive ? "inactive" : ""}`}>
           {/* improvememt, not recorded in video, its just looping through menuItems
           instead of hard coding all the routes */}
           {menuItems.map((menu, index) => (

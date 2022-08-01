@@ -163,12 +163,9 @@ const SideMenu = (props) => {
       <div className="divider"></div>
 
       <div className="side-menu-footer">
-        <div className="avatar">
-          <img src={user} alt="user" />
-        </div>
+        
         <div className="user-info">
-          <h5>Quang Minh Tran</h5>
-          <p>vnpalm@gmail.com</p>
+          <p>Phone: 403-613-1148 Email : vnpalm@gmail.com</p>
         </div>
       </div>
     </div>

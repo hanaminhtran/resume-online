@@ -17,7 +17,7 @@ button {
   background-color: rgb(84, 182, 137);
 }
 /* Sidebar */
-.sidebar-container {
+.side-menu {
   background-color: rgb(84, 182, 137);
   color: white;
   margin: 0;
@@ -25,7 +25,7 @@ button {
   text-align: center;
 }
 @media screen and (min-width: 800px) {
-  .sidebar-container {
+  .side-menu {
     width: 300px;
     position: fixed;
     height: 100vh;
@@ -34,7 +34,7 @@ button {
 }
 
 @media screen and (max-width: 799px) {
-  .sidebar-container {
+  .side-menu {
     width: auto;
     height: auto;
     position: relative;
@@ -77,8 +77,8 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 0.5rem;
-  padding: 0.5rem;
+  column-gap: 0rem;
+  padding: 0rem;
   font-size: 1.2rem;
   font-weight: 600;
 }
@@ -92,7 +92,7 @@ button {
   color: black;
 }
 .navbar-item a:hover {
-  color: black;
+  color: rgb(135, 75, 75);
 }
 /* ************* */
 
@@ -133,11 +133,41 @@ button {
   .footer {
     margin-left: auto;
   }
+  .main-container{
+    align-content: center;
+
+  }
   .main-container-child {
     width: auto;
     height: auto;
     position: relative;
   }
+  .side-menu-footer
+  {
+    display : none;
+  }
+  .react-pdf__Page__canvas {
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+}
+.react-pdf__Page__textContent {
+  margin: 0 auto;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.card-img {
+  margin: 0 auto;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+
+}
+.element.stype{
+  width: 100%;
 }
 .skills-conatiner {
   padding-left: 4rem;

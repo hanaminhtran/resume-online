@@ -21,7 +21,8 @@ import mongoDB from "../assets/media/mongoDB.png";
 
 import git from "../assets/media/git.png";
 import gitHub from "../assets/media/gitHub.png";
-
+import { NavLink, Link } from "react-router-dom";
+import Portfolio from "../components/Portfolio";
 
 
 
@@ -42,12 +43,28 @@ const Aboutme = () => {
                     Open for on-site/hybrid/remote opportunities.	
 			    </p>
             <br></br>		
-				<a href="/Portfolio">
-					<button className="btn me-2 mb-3 summary-button">View Portfolio</button>
-                </a>
-			    <a href="/Resume">
-                    <button className="btn me-2 mb-3 summary-button">View Resume</button>
-                </a>
+				
+					<li className="btn me-2 mb-3 summary-button">
+      <Link
+        exact
+        to={'/Portfolio'}
+        className={`menu-item`}>
+	    <div className="menu-icon">
+         
+        </div>
+        <span>View Portfolio</span>
+		</Link></li>
+            
+		<li className="btn me-2 mb-3 summary-button">
+      <Link
+        exact
+        to={'/Resume'}
+        className={`menu-item`}>
+	    <div className="menu-icon">
+         
+        </div>
+        <span>Resume</span>
+		</Link></li>
             </div>
             
             <div className="skills-conatiner">
